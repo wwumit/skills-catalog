@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.2",
-  "updatedAt": "2026-08-16T17:32:34.153Z",
+  "updatedAt": "2026-08-16T17:40:05.309Z",
   "skills": [
     {
       "name": "backtest-analyzer",
@@ -418,7 +418,7 @@
       "name": "market-sentiment",
       "fullName": "wwumit/skills-stock",
       "skillFullName": "wwumit/skills-stock/skills/market-sentiment",
-      "description": "四维度市场情绪评估（情绪/趋势/量能/宽度极端度），对大盘环境诊断并输出 0–100 评分与对应市场状态。",
+      "description": "四维度市场情绪评估（情绪/趋势/量能/宽度极端度），对大盘环境状态评估并输出 0–100 评分与对应市场状态。",
       "repo": "wwumit/skills-stock",
       "version": "1.1.0",
       "disclosure": {
@@ -470,7 +470,7 @@
       "skillFullName": "wwumit/skills-tools/skills/skill-compliance",
       "description": "Skill上架合规检查器（国内平台 + 发布披露）。检查金融敏感词、免责声明、安全红线，并按 DISCLOSURE v0.2 检查发布披露完整性（D1/D3/D4 必填）与声明-代码一致性（云端/离线/端点 mismatch）、DSH 宿主依赖遮蔽风险；输出 disclosure 摘要（开放数据层字段）。",
       "repo": "wwumit/skills-tools",
-      "version": "1.4.2",
+      "version": "1.4.3",
       "disclosure": {
         "cloud": false,
         "network": [],
