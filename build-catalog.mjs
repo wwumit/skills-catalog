@@ -14,6 +14,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(__dirname, '..')
 const REPOS = ['skills-compliance-intl', 'skills-stock', 'skills-tools']
+const GH_OWNER = 'wwumit'
 
 function parseFrontmatter(txt) {
   if (!txt.startsWith('---')) return null
@@ -62,7 +63,7 @@ for (const repo of REPOS) {
     catalog.skills.push({
       name: skill.name,
       description: fm?.description || skill.raw.slice(0, 200),
-      repo,
+      repo: GH_OWNER + '/' + repo,
       version: skill.version,
       files: skill.files,
     })

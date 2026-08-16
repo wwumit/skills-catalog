@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-16T08:01:08.302Z",
+  "updatedAt": "2026-08-16T08:09:04.327Z",
   "skills": [
     {
       "name": "backtest-analyzer",
       "description": "回测分析工具。从交易记录CSV计算回测核心指标：",
-      "repo": "skills-stock",
+      "repo": "wwumit/skills-stock",
       "version": "1.0.0",
       "files": [
         "CHANGELOG.md",
@@ -19,7 +19,7 @@
     {
       "name": "ccpa-check",
       "description": "CCPA/CPRA Compliance Check — based on the California Consumer Privacy Act (CCPA)",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "2.2.4",
       "files": [
         "SKILL.md",
@@ -33,7 +33,7 @@
     {
       "name": "ccpa-compliance",
       "description": "美国加州消费者隐私法（CCPA/CPRA）合规检查、风险评估和文档生成工具。",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "1.1.1",
       "files": [
         "CHANGELOG.md",
@@ -61,7 +61,7 @@
     {
       "name": "ccpa-guard",
       "description": "CCPA 合规护栏 (ccpa-guard) v1.0.0。",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "1.0.0",
       "files": [
         "CHANGELOG.md",
@@ -78,7 +78,7 @@
     {
       "name": "coppa-check",
       "description": "COPPA Compliance Check — Children's Online Privacy Protection Act (COPPA), 15 U.S.C. §6501 et seq. and the COPPA Rule (16 C.F.R. Part 312).",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "1.1.2",
       "files": [
         "CHANGELOG.md",
@@ -92,7 +92,7 @@
     {
       "name": "coppa-guard",
       "description": "COPPA 美国儿童隐私护栏 (coppa-guard) v1.0.0。",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "1.0.0",
       "files": [
         "CHANGELOG.md",
@@ -108,7 +108,7 @@
     {
       "name": "excel2insights",
       "description": "结构化数据（CSV/XLSX/XLS/TSV）分析与可视化工具：自动统计分析、数据质量检查、",
-      "repo": "skills-tools",
+      "repo": "wwumit/skills-tools",
       "version": "2.0.0",
       "files": [
         "CHANGELOG.md",
@@ -133,7 +133,7 @@
     {
       "name": "expert2skill",
       "description": "专家方法沉淀器（meta-skill）— 通过引导式访谈，把一个\"具备专业技术/知识但不懂 AI\"",
-      "repo": "skills-tools",
+      "repo": "wwumit/skills-tools",
       "version": "1.0.2",
       "files": [
         "SKILL.md",
@@ -151,7 +151,7 @@
     {
       "name": "finance-tools",
       "description": "财务分析工具集 v1.1.0。7个子命令覆盖财务分析全流程。",
-      "repo": "skills-tools",
+      "repo": "wwumit/skills-tools",
       "version": "1.1.0",
       "files": [
         "CHANGELOG.md",
@@ -165,7 +165,7 @@
     {
       "name": "fund-flow",
       "description": "资金流向分析工具 v1.1.0。分析股票/板块的主力资金净流入排行、",
-      "repo": "skills-stock",
+      "repo": "wwumit/skills-stock",
       "version": "1.1.0",
       "files": [
         "CHANGELOG.md",
@@ -179,7 +179,7 @@
     {
       "name": "gdpr-check",
       "description": "GDPR Compliance Check — General Data Protection Regulation (EU) 2016/679 (GDPR).",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "1.1.3",
       "files": [
         "SKILL.md",
@@ -192,7 +192,7 @@
     {
       "name": "gdpr-guard",
       "description": "GDPR 合规护栏 (gdpr) v1.0.0。",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "1.0.0",
       "files": [
         "CHANGELOG.md",
@@ -209,7 +209,7 @@
     {
       "name": "hipaa-check",
       "description": "HIPAA Compliance Check — Health Insurance Portability and Accountability Act (HIPAA), 45 C.F.R. Parts 160 & 164 (Privacy, Security, Breach Notification Rules).",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "1.1.3",
       "files": [
         "CHANGELOG.md",
@@ -224,7 +224,7 @@
     {
       "name": "hipaa-guard",
       "description": "HIPAA 美国医疗健康护栏 (hipaa-guard) v1.0.0。",
-      "repo": "skills-compliance-intl",
+      "repo": "wwumit/skills-compliance-intl",
       "version": "1.0.0",
       "files": [
         "CHANGELOG.md",
@@ -240,7 +240,7 @@
     {
       "name": "market-sentiment",
       "description": "四维度市场情绪评估（情绪/趋势/量能/宽度极端度），对大盘环境诊断并输出 0–100 评分与对应市场状态。",
-      "repo": "skills-stock",
+      "repo": "wwumit/skills-stock",
       "version": "1.1.0",
       "files": [
         "CHANGELOG.md",
@@ -256,7 +256,7 @@
     {
       "name": "market-signals",
       "description": "技术信号扫描器 v1.1.0。从价格数据计算RSI(14)、均线(5/10/20)、",
-      "repo": "skills-stock",
+      "repo": "wwumit/skills-stock",
       "version": "1.1.0",
       "files": [
         "CHANGELOG.md",
@@ -270,7 +270,7 @@
     {
       "name": "stock-planner",
       "description": "交易计划生成器。基于当前持仓、市场状态和策略规则",
-      "repo": "skills-stock",
+      "repo": "wwumit/skills-stock",
       "version": "1.0.0",
       "files": [
         "CHANGELOG.md",
@@ -284,7 +284,7 @@
     {
       "name": "stock-screener",
       "description": "🔎 多因子选股器 v1.0.2。连接 fund-flow / market-signals → stock-planner 的桥梁。",
-      "repo": "skills-stock",
+      "repo": "wwumit/skills-stock",
       "version": "1.0.2",
       "files": [
         "CHANGELOG.md",
@@ -299,7 +299,7 @@
     {
       "name": "sum2slides-pro",
       "description": "将多说话人对话/群聊记录一键转化为结构化 PPT（meeting/brainstorm/retro 模板），纯本地生成 PPTX。",
-      "repo": "skills-tools",
+      "repo": "wwumit/skills-tools",
       "version": "1.1.0",
       "files": [
         "CHANGELOG.md",
@@ -333,7 +333,7 @@
     {
       "name": "trade-tracker",
       "description": "交易追踪与归因分析 v1.1.0。从交易记录逐笔追踪盈亏、",
-      "repo": "skills-stock",
+      "repo": "wwumit/skills-stock",
       "version": "1.1.0",
       "files": [
         "CHANGELOG.md",
