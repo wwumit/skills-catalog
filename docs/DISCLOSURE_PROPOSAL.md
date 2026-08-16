@@ -28,36 +28,41 @@
 | D5 | **法域标签** | 建议 | 技能/插件内容适用的法律或地域（如 US-CA、EU、CN） |
 | D6 | **数据保留** | 建议 | 数据在服务端的保留策略（none / session / server-side） |
 
-## 三、声明格式（frontmatter / package.json）
+## 三、声明格式（frontmatter / package.json）— v0.2 三方对齐版
+
+> v0.2 变更：与市场字段（cloud/network/apiKeys/jurisdiction）+ 验证层管线对齐——合并 cloud_endpoints → network；保留本方案补充的 offline_mode/retention；凭据细节收敛为 api_keys[].storage。命名/必填分级待三方确认（见 §对齐说明）。
 
 ### 技能（SKILL.md frontmatter 推荐字段）
 
 ```yaml
 disclosure:
-  cloud: true                              # D1：是否发数据到云端
-  cloud_endpoints:                         # D1：明确端点（与 permissions.network 一致）
-    - "https://compliancehub.cn"
-  offline_mode: true                       # D2：是否存在完全离线模式
-  api_keys:                                # D3 凭据处理：如何提供 + 如何安全存储
-    - env: "COMPLIANCEHUB_API_KEY"          # 必需：用户通过此环境变量提供 key
-      storage: "file-0600"                  # 若落盘：文件权限 0600（仅属主读写），且不写日志
-  jurisdiction: ["US-CA", "EU"]            # D5：适用法域
-  retention: "session"                     # D6：none / session / server
+  cloud: false                    # D1：是否发数据到云端（三方共识）
+  network: []                     # D1：网络端点，如 ["https://compliancehub.cn"]（市场字段，合并原 cloud_endpoints）
+  offline_mode: true              # D2：是否存在完全离线模式（本方案补充）
+  api_keys:                       # D3：凭据处理（对齐市场 apiKeys）
+    - env: "COMPLIANCEHUB_API_KEY"    # 用户如何提供（环境变量名）
+      storage: "file-0600"           # 若落盘：0600 仅属主读写、不写日志
+  jurisdiction: ["US-CA", "EU"]   # D5：适用法域（三方共识）
+  retention: "session"            # D6：数据保留 none / session / server（本方案补充）
 ```
 
-### 插件（package.json 推荐字段）
+### 插件（package.json 推荐字段，同一 schema 的 JSON 形态）
 
 ```json
 {
   "dsh": { "plugin": true, "kind": "server" },
   "disclosure": {
     "cloud": false,
-    "network_endpoints": [],
-    "api_keys": { "env": [], "files": [] },
-    "jurisdiction": []
+    "network": [],
+    "offline_mode": true,
+    "api_keys": [{ "env": "COMPLIANCEHUB_API_KEY", "storage": "file-0600" }],
+    "jurisdiction": ["US-CA"],
+    "retention": "session"
   }
 }
 ```
+
+> **对齐说明**：市场字段（cloud/network/apiKeys/jurisdiction）+ 本方案补充（offline_mode/retention）+ 凭据细节（api_keys.storage）合并为 6 字段。schema 版本化（v0.2），配合验证层 schemaVersion 防演进破坏解析；disclosure 复用验证层「构建期抓取开放数据层」管线（维护者已确认）。
 
 ## 四、正例 / 反例
 
