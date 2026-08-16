@@ -7,7 +7,8 @@
  * 精选清单: ./curated.json（增删技能只改这个文件）
  * 产物: catalog.json
  *   - 列表 + 每技能描述/版本/仓库 + 文件清单
- *   - fullName（对齐验证层 verified.json 映射键）
+ *   - fullName（对齐验证层 verified.json 映射键，仓库级）
+ *   - skillFullName（技能级完整路径，同仓混合披露时精确匹配用）
  *   - disclosure（开放数据层，camelCase 形态，对齐市场索引字段契约）
  *   - disclosureSchemaVersion（独立 fail-closed 版本）
  */
@@ -120,6 +121,7 @@ for (const repo of REPOS) {
     catalog.skills.push({
       name: skill.name,
       fullName: GH_OWNER + '/' + repo, // 对齐验证层 fullName 映射键（技能所在发布仓）
+      skillFullName: GH_OWNER + '/' + repo + '/skills/' + skill.name, // 技能级完整路径（同仓混合披露时精确匹配用）
       description: fm?.description || skill.raw.slice(0, 200),
       repo: GH_OWNER + '/' + repo,
       version: skill.version,
