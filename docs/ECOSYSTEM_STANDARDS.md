@@ -1,9 +1,18 @@
 # 生态发布质量规范（DSH Ecosystem Publication Standards）
 
-> 版本：v1.0（2026-08-16）
+> 版本：v1.1（2026-08-16）
 > 目的：我们的 catalog 被市场消费、规则集被 STANDARD 引用、bundle 被 dshbase 收录——**产物是生态的依赖**。
 > 质量要求从"自己看着行"升级为"可被独立检查、可被消费方依赖"。本规范是"规则→检查→评分→报告"
 > 引擎在自家发布管线的实例：规则（本规范）→ 检查（skill-compliance + 手动 checklist）→ 评分（门槛判定）→ 报告（catalog/发布记录）。
+
+## 〇、品牌结构（一组品牌，多线产物）
+
+- **品牌**：`wwumit` — 治理驱动的 AI 技能与工具生态（Governance-driven AI skills & tools）
+- **理念锚**：规则 → 检查 → 评分 → 报告（治理即基础设施）
+- **产品线**：合规（compliancehub 系列，含插件 dsh-compliancehub）· 股票 · 工具/专家
+- **数据层**：skills-catalog（catalog.json 聚合，双颗粒度披露）
+- **呈现**：所有仓库 README 带统一品牌页眉（品牌 + 理念 + 产品线互链）；对外是一个品牌下的多线产物，不是互不相关的孤立仓库
+- **平台边界**：marketplace/dshbase 按仓库独立收录（机制不可合仓），品牌统一靠展示层（README 页眉/互链/统一规范）实现
 
 ---
 
