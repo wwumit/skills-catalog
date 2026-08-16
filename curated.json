@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "comment": "第一批精选 20 个：质量优先。excel2insights-pro 收回（未来付费版）。",
+  "comment": "第一批精选 21 个：加入 skill-compliance（上架合规检查器，治理叙事支撑）",
   "curated": [
     "ccpa-compliance",
     "ccpa-check",
@@ -21,7 +21,8 @@
     "sum2slides-pro",
     "expert2skill",
     "coppa-check",
-    "hipaa-check"
+    "hipaa-check",
+    "skill-compliance"
   ],
   "excluded_reasons": {
     "ccpa-audit": "description 无触发词；云端评分",
