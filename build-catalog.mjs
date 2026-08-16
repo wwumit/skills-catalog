@@ -20,6 +20,8 @@ import { fileURLToPath } from 'node:url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(__dirname, '..')
 const REPOS = ['skills-compliance-intl', 'skills-stock', 'skills-tools']
+// 登记层（catalog=登记/披露层，分发仍分地域）：国内合规仓登记展示，国际市场只推出境仓
+const DOMESTIC_REPOS = ['skills-xborder', 'skills-domestic']
 const GH_OWNER = 'wwumit'
 const DISCLOSURE_SCHEMA_VERSION = '0.2'
 
@@ -121,11 +123,32 @@ for (const repo of REPOS) {
     const fm = parseFrontmatter(skill.raw)
     catalog.skills.push({
       name: skill.name,
-      fullName: GH_OWNER + '/' + repo, // 对齐验证层 fullName 映射键（技能所在发布仓）
-      skillFullName: GH_OWNER + '/' + repo + '/skills/' + skill.name, // 技能级完整路径（同仓混合披露时精确匹配用）
+      fullName: GH_OWNER + '/' + repo,
+      skillFullName: GH_OWNER + '/' + repo + '/skills/' + skill.name,
       description: fm?.description || skill.raw.slice(0, 200),
       repo: GH_OWNER + '/' + repo,
       version: skill.version,
+      distribution: 'intl', // 出境仓：国际市场可分发作
+      disclosure: fm?.disclosure || null,
+      files: skill.files,
+    })
+  }
+}
+// 登记层：国内合规仓（catalog=登记/披露层，实际分发走国内渠道）
+// 同名技能以出境仓（intl）为准，domestic 同名条目跳过（curated 名已在 intl 收录）
+const intlNames = new Set(catalog.skills.map((x) => x.name))
+for (const repo of DOMESTIC_REPOS) {
+  for (const skill of collectSkills(join(BASE, repo))) {
+    if (!curatedNames.has(skill.name) || intlNames.has(skill.name)) continue
+    const fm = parseFrontmatter(skill.raw)
+    catalog.skills.push({
+      name: skill.name,
+      fullName: GH_OWNER + '/' + repo,
+      skillFullName: GH_OWNER + '/' + repo + '/skills/' + skill.name,
+      description: fm?.description || skill.raw.slice(0, 200),
+      repo: GH_OWNER + '/' + repo,
+      version: skill.version,
+      distribution: 'domestic', // 登记展示；分发走国内渠道，不进国际市场安装
       disclosure: fm?.disclosure || null,
       files: skill.files,
     })
