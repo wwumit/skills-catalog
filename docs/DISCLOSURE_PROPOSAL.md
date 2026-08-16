@@ -38,8 +38,9 @@ disclosure:
   cloud_endpoints:                         # D1：明确端点（与 permissions.network 一致）
     - "https://compliancehub.cn"
   offline_mode: true                       # D2：是否存在完全离线模式
-  api_keys:                                # D3
-    - { env: "COMPLIANCEHUB_API_KEY", file: "~/.config/compliancehub/ccpa-check.key", mode: "0600" }
+  api_keys:                                # D3（如何提供 + 安全属性，不披露实现路径）
+    - env: "COMPLIANCEHUB_API_KEY"
+      storage: "file-0600"                  # 落盘 0600、不落日志
   jurisdiction: ["US-CA", "EU"]            # D5：适用法域
   retention: "session"                     # D6：none / session / server
 ```
