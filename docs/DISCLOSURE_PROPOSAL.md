@@ -3,6 +3,32 @@
 > 提交对象：bradeGithub/DSH-Plugins-Marketplace
 > 提交方式：Fork → `docs/` 分支 → PR（按 CONTRIBUTING.md：中英双语、无 emoji、`docs(disclosure): ...` 提交信息）
 > 背景：讨论 #2269「合规层」提案的落地文档
+> 状态：**v0.2 三方对齐已确认，开放数据层已落地**（2026-08-16）
+
+---
+
+## 〇、落地状态（2026-08-16）
+
+### 三方对齐确认（#2269 版主 bradeGithub 12:09 回复）
+
+| 议题 | 结论 |
+|---|---|
+| 字段命名 | 市场索引统一 **JSON camelCase**：`disclosure: { cloud, network, offlineMode, apiKeys, jurisdiction, retention }`；frontmatter snake_case（`offline_mode`/`api_keys`）为声明形态，构建期归一化，两形态等价 |
+| storage 枚举 | `apiKeys[].storage` 收敛为 `file-0600` 类枚举接收 |
+| 版本化 | `disclosureSchemaVersion` **独立于**验证层 `schemaVersion`，同为 fail-closed（版本不符跳过盖章） |
+| 必填分级 | D1/D3/D4 必填、D2/D5/D6 建议；卡片三态 ✅ 齐全 / ⚠️ 缺必填项 / ❓ 未声明但有网络迹象，复用"未验证"渲染位 |
+
+### 开放数据层已实施（方案 B）
+
+- `wwumit/skills-catalog/catalog.json` 已升级为**披露开放数据层**：顶层 `disclosureSchemaVersion: "0.2"`，条目带 `fullName`（对齐验证层映射键）+ `disclosure`（camelCase 6 字段）
+- **21 个精选技能全部披露**：4 个云端评分技能（ccpa/gdpr/hipaa/coppa-check）真值披露（compliancehub.cn + COMPLIANCEHUB_API_KEY + file-0600 + 法域 + retention:session），17 个纯本地技能 `cloud: false`
+- 21 个 SKILL.md 同步补齐 `disclosure` frontmatter + 缺失的 17 个补 `permissions`（D4 必填）
+- 构建脚本 `build-catalog.mjs` 在仓库内，可复现；声明源（SKILL.md）与聚合源（catalog.json）分离
+- 市场侧按 verified.json 同款管线消费：单请求抓 catalog.json → fullName 匹配 → 盖章 disclosure → 客户端三态
+
+### 回帖
+
+- 2026-08-16 回帖 #2269（discussioncomment-18040305）：catalog 形态 + 对接建议；预留 `skillFullName`（技能级匹配备用）
 
 ---
 
@@ -30,7 +56,8 @@
 
 ## 三、声明格式（frontmatter / package.json）— v0.2 三方对齐版
 
-> v0.2 变更：与市场字段（cloud/network/apiKeys/jurisdiction）+ 验证层管线对齐——合并 cloud_endpoints → network；保留本方案补充的 offline_mode/retention；凭据细节收敛为 api_keys[].storage。命名/必填分级待三方确认（见 §对齐说明）。
+> v0.2 变更：与市场字段（cloud/network/apiKeys/jurisdiction）+ 验证层管线对齐——合并 cloud_endpoints → network；保留本方案补充的 offline_mode/retention；凭据细节收敛为 api_keys[].storage。
+> **命名/必填分级已三方确认**（2026-08-16，见 §〇）：市场索引统一 camelCase、`disclosureSchemaVersion` 独立 fail-closed、D1/D3/D4 必填。
 
 ### 技能（SKILL.md frontmatter 推荐字段）
 
@@ -62,7 +89,7 @@ disclosure:
 }
 ```
 
-> **对齐说明**：市场字段（cloud/network/apiKeys/jurisdiction）+ 本方案补充（offline_mode/retention）+ 凭据细节（api_keys.storage）合并为 6 字段。schema 版本化（v0.2），配合验证层 schemaVersion 防演进破坏解析；disclosure 复用验证层「构建期抓取开放数据层」管线（维护者已确认）。
+> **对齐说明**：市场字段（cloud/network/apiKeys/jurisdiction）+ 本方案补充（offline_mode/retention）+ 凭据细节（api_keys.storage）合并为 6 字段。schema 版本化（v0.2），配合验证层 schemaVersion 防演进破坏解析；disclosure 复用验证层「构建期抓取开放数据层」管线（已落地：catalog.json 为聚合源，见 §〇）。
 
 ## 四、正例 / 反例
 
