@@ -1,12 +1,22 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-16T08:29:03.622Z",
+  "disclosureSchemaVersion": "0.2",
+  "updatedAt": "2026-08-16T12:20:28.241Z",
   "skills": [
     {
       "name": "backtest-analyzer",
+      "fullName": "wwumit/skills-stock",
       "description": "回测分析工具。从交易记录CSV计算回测核心指标：",
       "repo": "wwumit/skills-stock",
       "version": "1.0.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -18,9 +28,27 @@
     },
     {
       "name": "ccpa-check",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "CCPA/CPRA Compliance Check — based on the California Consumer Privacy Act (CCPA)",
       "repo": "wwumit/skills-compliance-intl",
       "version": "2.2.4",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "US-CA"
+        ],
+        "retention": "session"
+      },
       "files": [
         "SKILL.md",
         "_meta.json",
@@ -32,9 +60,18 @@
     },
     {
       "name": "ccpa-compliance",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "美国加州消费者隐私法（CCPA/CPRA）合规检查、风险评估和文档生成工具。",
       "repo": "wwumit/skills-compliance-intl",
       "version": "1.1.1",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "DISCLAIMER.md",
@@ -60,9 +97,18 @@
     },
     {
       "name": "ccpa-guard",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "CCPA 合规护栏 (ccpa-guard) v1.0.0。",
       "repo": "wwumit/skills-compliance-intl",
       "version": "1.0.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -77,9 +123,27 @@
     },
     {
       "name": "coppa-check",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "COPPA Compliance Check — Children's Online Privacy Protection Act (COPPA), 15 U.S.C. §6501 et seq. and the COPPA Rule (16 C.F.R. Part 312).",
       "repo": "wwumit/skills-compliance-intl",
       "version": "1.1.2",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "US"
+        ],
+        "retention": "session"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -91,9 +155,18 @@
     },
     {
       "name": "coppa-guard",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "COPPA 美国儿童隐私护栏 (coppa-guard) v1.0.0。",
       "repo": "wwumit/skills-compliance-intl",
       "version": "1.0.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -107,9 +180,18 @@
     },
     {
       "name": "excel2insights",
+      "fullName": "wwumit/skills-tools",
       "description": "结构化数据（CSV/XLSX/XLS/TSV）分析与可视化工具：自动统计分析、数据质量检查、",
       "repo": "wwumit/skills-tools",
       "version": "2.0.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "DISCLAIMER.md",
@@ -132,9 +214,18 @@
     },
     {
       "name": "expert2skill",
+      "fullName": "wwumit/skills-tools",
       "description": "专家方法沉淀器（meta-skill）— 通过引导式访谈，把一个\"具备专业技术/知识但不懂 AI\"",
       "repo": "wwumit/skills-tools",
       "version": "1.0.2",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "SKILL.md",
         "_meta.json",
@@ -150,9 +241,18 @@
     },
     {
       "name": "finance-tools",
+      "fullName": "wwumit/skills-tools",
       "description": "财务分析工具集 v1.1.0。7个子命令覆盖财务分析全流程。",
       "repo": "wwumit/skills-tools",
       "version": "1.1.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -164,9 +264,18 @@
     },
     {
       "name": "fund-flow",
+      "fullName": "wwumit/skills-stock",
       "description": "资金流向分析工具 v1.1.0。分析股票/板块的主力资金净流入排行、",
       "repo": "wwumit/skills-stock",
       "version": "1.1.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -178,9 +287,27 @@
     },
     {
       "name": "gdpr-check",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "GDPR Compliance Check — General Data Protection Regulation (EU) 2016/679 (GDPR).",
       "repo": "wwumit/skills-compliance-intl",
       "version": "1.1.3",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "EU"
+        ],
+        "retention": "session"
+      },
       "files": [
         "SKILL.md",
         "_meta.json",
@@ -191,9 +318,18 @@
     },
     {
       "name": "gdpr-guard",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "GDPR 合规护栏 (gdpr) v1.0.0。",
       "repo": "wwumit/skills-compliance-intl",
       "version": "1.0.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -208,9 +344,27 @@
     },
     {
       "name": "hipaa-check",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "HIPAA Compliance Check — Health Insurance Portability and Accountability Act (HIPAA), 45 C.F.R. Parts 160 & 164 (Privacy, Security, Breach Notification Rules).",
       "repo": "wwumit/skills-compliance-intl",
       "version": "1.1.3",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "US"
+        ],
+        "retention": "session"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -223,9 +377,18 @@
     },
     {
       "name": "hipaa-guard",
+      "fullName": "wwumit/skills-compliance-intl",
       "description": "HIPAA 美国医疗健康护栏 (hipaa-guard) v1.0.0。",
       "repo": "wwumit/skills-compliance-intl",
       "version": "1.0.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -239,9 +402,18 @@
     },
     {
       "name": "market-sentiment",
+      "fullName": "wwumit/skills-stock",
       "description": "四维度市场情绪评估（情绪/趋势/量能/宽度极端度），对大盘环境诊断并输出 0–100 评分与对应市场状态。",
       "repo": "wwumit/skills-stock",
       "version": "1.1.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -255,9 +427,18 @@
     },
     {
       "name": "market-signals",
+      "fullName": "wwumit/skills-stock",
       "description": "技术信号扫描器 v1.1.0。从价格数据计算RSI(14)、均线(5/10/20)、",
       "repo": "wwumit/skills-stock",
       "version": "1.1.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -269,9 +450,18 @@
     },
     {
       "name": "skill-compliance",
+      "fullName": "wwumit/skills-tools",
       "description": "Skill上架合规检查器（面向国内平台）。在上传前检查skill是否符合国内监管要求，包括金融敏感词、免责声明、安全红线等。",
       "repo": "wwumit/skills-tools",
       "version": "1.3.1",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -290,9 +480,18 @@
     },
     {
       "name": "stock-planner",
+      "fullName": "wwumit/skills-stock",
       "description": "交易计划生成器。基于当前持仓、市场状态和策略规则",
       "repo": "wwumit/skills-stock",
       "version": "1.0.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -304,9 +503,18 @@
     },
     {
       "name": "stock-screener",
+      "fullName": "wwumit/skills-stock",
       "description": "🔎 多因子选股器 v1.0.2。连接 fund-flow / market-signals → stock-planner 的桥梁。",
       "repo": "wwumit/skills-stock",
       "version": "1.0.2",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
@@ -319,9 +527,18 @@
     },
     {
       "name": "sum2slides-pro",
+      "fullName": "wwumit/skills-tools",
       "description": "将多说话人对话/群聊记录一键转化为结构化 PPT（meeting/brainstorm/retro 模板），纯本地生成 PPTX。",
       "repo": "wwumit/skills-tools",
       "version": "1.1.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "DISCLAIMER.md",
@@ -353,9 +570,18 @@
     },
     {
       "name": "trade-tracker",
+      "fullName": "wwumit/skills-stock",
       "description": "交易追踪与归因分析 v1.1.0。从交易记录逐笔追踪盈亏、",
       "repo": "wwumit/skills-stock",
       "version": "1.1.0",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none"
+      },
       "files": [
         "CHANGELOG.md",
         "README.md",
