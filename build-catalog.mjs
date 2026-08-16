@@ -11,6 +11,7 @@
  *   - skillFullName（技能级完整路径，同仓混合披露时精确匹配用）
  *   - disclosure（开放数据层，camelCase 形态，对齐市场索引字段契约）
  *   - disclosureSchemaVersion（独立 fail-closed 版本）
+ *   - repos[].cloudSkills（仓级简化披露：只列云端技能，未列出即本地）
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from 'node:fs'
 import { join, resolve, dirname } from 'node:path'
@@ -133,7 +134,7 @@ for (const repo of REPOS) {
 
 catalog.skills.sort((a, b) => a.name.localeCompare(b.name))
 
-// 仓级聚合披露（第二颗粒度）：cloud:true 优先（fail-safe），与 STANDARD §9 规则一致
+// 仓级披露（简化形态）：只列云端技能，未列出的自然为本地——详情在技能级 skills[].disclosure
 function aggregateRepoDisclosures(skills) {
   const byRepo = new Map()
   for (const s of skills) {
@@ -142,36 +143,10 @@ function aggregateRepoDisclosures(skills) {
   }
   const repos = []
   for (const [fullName, items] of byRepo) {
-    const cloudSkills = items.filter((i) => i.disclosure?.cloud)
-    const localSkills = items.filter((i) => !i.disclosure?.cloud)
-    const union = (key) => {
-      const set = new Set()
-      for (const i of items) {
-        const v = i.disclosure?.[key]
-        if (Array.isArray(v)) v.forEach((x) => set.add(x))
-      }
-      return [...set]
-    }
-    const apiKeys = []
-    const seenEnv = new Set()
-    for (const i of cloudSkills) {
-      for (const k of i.disclosure?.apiKeys || []) {
-        if (k.env && !seenEnv.has(k.env)) { seenEnv.add(k.env); apiKeys.push(k) }
-      }
-    }
     repos.push({
       fullName,
       skillCount: items.length,
-      disclosure: {
-        cloud: cloudSkills.length > 0,          // 仓内任一云端 → cloud:true（fail-safe）
-        network: union('network'),
-        offlineMode: items.some((i) => i.disclosure?.offlineMode),
-        apiKeys,
-        jurisdiction: union('jurisdiction'),
-        retention: [...new Set(cloudSkills.map((i) => i.disclosure?.retention).filter(Boolean))],
-      },
-      cloudSkills: cloudSkills.map((i) => i.name),
-      localSkills: localSkills.map((i) => i.name),
+      cloudSkills: items.filter((i) => i.disclosure?.cloud).map((i) => i.name),
     })
   }
   repos.sort((a, b) => a.fullName.localeCompare(b.fullName))
