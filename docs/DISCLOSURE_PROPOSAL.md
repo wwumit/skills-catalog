@@ -38,9 +38,9 @@ disclosure:
   cloud_endpoints:                         # D1：明确端点（与 permissions.network 一致）
     - "https://compliancehub.cn"
   offline_mode: true                       # D2：是否存在完全离线模式
-  api_keys:                                # D3（如何提供 + 安全属性，不披露实现路径）
-    - env: "COMPLIANCEHUB_API_KEY"
-      storage: "file-0600"                  # 落盘 0600、不落日志
+  api_keys:                                # D3 凭据处理：如何提供 + 如何安全存储
+    - env: "COMPLIANCEHUB_API_KEY"          # 必需：用户通过此环境变量提供 key
+      storage: "file-0600"                  # 若落盘：文件权限 0600（仅属主读写），且不写日志
   jurisdiction: ["US-CA", "EU"]            # D5：适用法域
   retention: "session"                     # D6：none / session / server
 ```
