@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "disclosureSchemaVersion": "0.2",
-  "updatedAt": "2026-08-16T18:21:19.741Z",
+  "disclosureSchemaVersion": "0.3",
+  "updatedAt": "2026-08-16T18:32:00.093Z",
   "skills": [
     {
       "name": "backtest-analyzer",
@@ -17,7 +17,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -51,7 +52,8 @@
         "jurisdiction": [
           "US-CA"
         ],
-        "retention": "session"
+        "retention": "session",
+        "pay": false
       },
       "files": [
         "SKILL.md",
@@ -76,7 +78,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -115,7 +118,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -152,7 +156,8 @@
         "jurisdiction": [
           "US"
         ],
-        "retention": "session"
+        "retention": "session",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -177,7 +182,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -204,7 +210,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -240,7 +247,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "SKILL.md",
@@ -269,7 +277,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -294,7 +303,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -328,7 +338,8 @@
         "jurisdiction": [
           "EU"
         ],
-        "retention": "session"
+        "retention": "session",
+        "pay": false
       },
       "files": [
         "SKILL.md",
@@ -352,7 +363,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -389,7 +401,8 @@
         "jurisdiction": [
           "US"
         ],
-        "retention": "session"
+        "retention": "session",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -415,7 +428,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -442,7 +456,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -469,7 +484,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -489,7 +505,7 @@
       "version": "1.4.1",
       "distribution": "domestic",
       "disclosure": {
-        "cloud": true,
+        "cloud": false,
         "network": [
           "https://compliancehub.cn:8443"
         ],
@@ -498,7 +514,8 @@
         "jurisdiction": [
           "CN"
         ],
-        "retention": "server"
+        "retention": "server",
+        "pay": true
       },
       "files": [
         "CASES.md",
@@ -532,7 +549,7 @@
       "skillFullName": "wwumit/skills-tools/skills/skill-compliance",
       "description": "Skill上架合规检查器（国内平台 + 发布披露）。检查金融敏感词、免责声明、安全红线，并按 DISCLOSURE v0.2 检查发布披露完整性（D1/D3/D4 必填）与声明-代码一致性（云端/离线/端点 mismatch）、DSH 宿主依赖遮蔽风险；输出 disclosure 摘要（开放数据层字段）。",
       "repo": "wwumit/skills-tools",
-      "version": "1.4.4",
+      "version": "1.4.5",
       "distribution": "intl",
       "disclosure": {
         "cloud": false,
@@ -540,7 +557,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -574,7 +592,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -599,7 +618,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -625,7 +645,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -670,7 +691,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -695,7 +717,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "SKILL.md",
@@ -719,7 +742,8 @@
         "offlineMode": true,
         "apiKeys": [],
         "jurisdiction": [],
-        "retention": "none"
+        "retention": "none",
+        "pay": false
       },
       "files": [
         "CHANGELOG.md",
@@ -742,29 +766,34 @@
         "coppa-check",
         "gdpr-check",
         "hipaa-check"
-      ]
+      ],
+      "paySkills": []
     },
     {
       "fullName": "wwumit/skills-domestic",
       "skillCount": 1,
-      "cloudSkills": [
+      "cloudSkills": [],
+      "paySkills": [
         "shop-ad-check-pro"
       ]
     },
     {
       "fullName": "wwumit/skills-stock",
       "skillCount": 7,
-      "cloudSkills": []
+      "cloudSkills": [],
+      "paySkills": []
     },
     {
       "fullName": "wwumit/skills-tools",
       "skillCount": 5,
-      "cloudSkills": []
+      "cloudSkills": [],
+      "paySkills": []
     },
     {
       "fullName": "wwumit/skills-xborder",
       "skillCount": 2,
-      "cloudSkills": []
+      "cloudSkills": [],
+      "paySkills": []
     }
   ]
 }

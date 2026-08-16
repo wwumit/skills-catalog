@@ -23,7 +23,7 @@ const REPOS = ['skills-compliance-intl', 'skills-stock', 'skills-tools']
 // 登记层（catalog=登记/披露层，分发仍分地域）：国内合规仓登记展示，国际市场只推出境仓
 const DOMESTIC_REPOS = ['skills-xborder', 'skills-domestic']
 const GH_OWNER = 'wwumit'
-const DISCLOSURE_SCHEMA_VERSION = '0.2'
+const DISCLOSURE_SCHEMA_VERSION = '0.3'
 
 function parseFrontmatter(txt) {
   if (!txt.startsWith('---')) return null
@@ -55,6 +55,7 @@ function parseDisclosure(fm) {
   const offlineRaw = get('offline_mode')
   const jurisRaw = get('jurisdiction')
   const retention = get('retention')
+  const payRaw = get('pay')
   // api_keys 列表：缩进 4 空格的 "- env:" 条目，storage 在后续缩进 6 空格行
   const apiKeys = []
   let current = null
@@ -79,6 +80,7 @@ function parseDisclosure(fm) {
     apiKeys,
     jurisdiction: parseArr(jurisRaw),
     retention: retention?.replace(/["']/g, '') || 'none',
+    pay: payRaw === 'true',
   }
 }
 
@@ -170,6 +172,7 @@ function aggregateRepoDisclosures(skills) {
       fullName,
       skillCount: items.length,
       cloudSkills: items.filter((i) => i.disclosure?.cloud).map((i) => i.name),
+      paySkills: items.filter((i) => i.disclosure?.pay).map((i) => i.name),
     })
   }
   repos.sort((a, b) => a.fullName.localeCompare(b.fullName))
