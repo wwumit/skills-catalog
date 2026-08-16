@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "comment": "第一批精选 20 个：质量优先。excel2insights-pro 收回（未来付费版）。",
+  "curated": [
+    "ccpa-compliance",
+    "ccpa-check",
+    "ccpa-guard",
+    "gdpr-check",
+    "gdpr-guard",
+    "coppa-guard",
+    "hipaa-guard",
+    "market-sentiment",
+    "market-signals",
+    "stock-screener",
+    "stock-planner",
+    "backtest-analyzer",
+    "trade-tracker",
+    "fund-flow",
+    "excel2insights",
+    "finance-tools",
+    "sum2slides-pro",
+    "expert2skill",
+    "coppa-check",
+    "hipaa-check"
+  ],
+  "excluded_reasons": {
+    "ccpa-audit": "description 无触发词；云端评分",
+    "gdpr-audit": "与 gdpr-check 功能重复；云端",
+    "gdpr-compliance": "纯本地旗舰但 description 缺触发词（下批补）",
+    "study-abroad-assistant": "云端引擎，数据出本机；隐私披露负担（暂缓）",
+    "fitness-daily": "描述较薄；非核心业务线",
+    "csv-tools": "与 excel2insights（结构化数据分析）冗余；保留 finance-tools",
+    "excel2insights-pro": "未来计划做付费版，收回暂不公开"
+  }
+}
