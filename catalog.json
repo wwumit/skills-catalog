@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.2",
-  "updatedAt": "2026-08-16T14:18:31.619Z",
+  "updatedAt": "2026-08-16T14:26:16.506Z",
   "skills": [
     {
       "name": "backtest-analyzer",
@@ -610,6 +610,88 @@
         "package.json",
         "requirements.txt",
         "scripts/trade_tracker.py"
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillCount": 9,
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "US-CA",
+          "US",
+          "EU"
+        ],
+        "retention": [
+          "session"
+        ]
+      },
+      "cloudSkills": [
+        "ccpa-check",
+        "coppa-check",
+        "gdpr-check",
+        "hipaa-check"
+      ],
+      "localSkills": [
+        "ccpa-compliance",
+        "ccpa-guard",
+        "coppa-guard",
+        "gdpr-guard",
+        "hipaa-guard"
+      ]
+    },
+    {
+      "fullName": "wwumit/skills-stock",
+      "skillCount": 7,
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": []
+      },
+      "cloudSkills": [],
+      "localSkills": [
+        "backtest-analyzer",
+        "fund-flow",
+        "market-sentiment",
+        "market-signals",
+        "stock-planner",
+        "stock-screener",
+        "trade-tracker"
+      ]
+    },
+    {
+      "fullName": "wwumit/skills-tools",
+      "skillCount": 5,
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": []
+      },
+      "cloudSkills": [],
+      "localSkills": [
+        "excel2insights",
+        "expert2skill",
+        "finance-tools",
+        "skill-compliance",
+        "sum2slides-pro"
       ]
     }
   ]
