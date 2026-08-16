@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.2",
-  "updatedAt": "2026-08-16T18:10:22.526Z",
+  "updatedAt": "2026-08-16T18:21:19.741Z",
   "skills": [
     {
       "name": "backtest-analyzer",
@@ -489,12 +489,16 @@
       "version": "1.4.1",
       "distribution": "domestic",
       "disclosure": {
-        "cloud": false,
-        "network": [],
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn:8443"
+        ],
         "offlineMode": true,
         "apiKeys": [],
-        "jurisdiction": [],
-        "retention": "none"
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "server"
       },
       "files": [
         "CASES.md",
@@ -528,7 +532,7 @@
       "skillFullName": "wwumit/skills-tools/skills/skill-compliance",
       "description": "Skill上架合规检查器（国内平台 + 发布披露）。检查金融敏感词、免责声明、安全红线，并按 DISCLOSURE v0.2 检查发布披露完整性（D1/D3/D4 必填）与声明-代码一致性（云端/离线/端点 mismatch）、DSH 宿主依赖遮蔽风险；输出 disclosure 摘要（开放数据层字段）。",
       "repo": "wwumit/skills-tools",
-      "version": "1.4.3",
+      "version": "1.4.4",
       "distribution": "intl",
       "disclosure": {
         "cloud": false,
@@ -743,7 +747,9 @@
     {
       "fullName": "wwumit/skills-domestic",
       "skillCount": 1,
-      "cloudSkills": []
+      "cloudSkills": [
+        "shop-ad-check-pro"
+      ]
     },
     {
       "fullName": "wwumit/skills-stock",
