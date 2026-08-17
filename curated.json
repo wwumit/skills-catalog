@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "comment": "第一批精选 21 个：加入 skill-compliance（上架合规检查器，治理叙事支撑） 第一批国内商业类登记：xborder-ecom-check/guard + shop-ad-check-pro（2026-08-16）",
+  "comment": "加入 bundle-lint/runtime-probe（发布质量工具箱补全，2026-08-17）",
   "curated": [
     "ccpa-compliance",
     "ccpa-check",
@@ -27,7 +27,9 @@
     "xborder-ecom-guard",
     "shop-ad-check-pro",
     "dependency-scan",
-    "malware-scan"
+    "malware-scan",
+    "bundle-lint",
+    "runtime-probe"
   ],
   "excluded_reasons": {
     "ccpa-audit": "description 无触发词；云端评分",

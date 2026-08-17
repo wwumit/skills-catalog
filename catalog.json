@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.3",
-  "updatedAt": "2026-08-17T03:18:58.567Z",
+  "updatedAt": "2026-08-17T10:30:55.629Z",
   "skills": [
     {
       "name": "backtest-analyzer",
@@ -27,6 +27,30 @@
         "package.json",
         "requirements.txt",
         "scripts/backtest_analyzer.py"
+      ]
+    },
+    {
+      "name": "bundle-lint",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/bundle-lint",
+      "description": "DSH 插件 bundle 结构一致性校验器。校验 cordis.patch.yml、package.json 的 dsh 插件配置、",
+      "repo": "wwumit/skills-tools",
+      "version": "0.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "scripts/bundle-lint.py"
       ]
     },
     {
@@ -546,6 +570,30 @@
       ]
     },
     {
+      "name": "runtime-probe",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/runtime-probe",
+      "description": "DSH 插件实机验证引导器。对任意插件目录生成标准验证脚本，在真实 DSH SkillRegistry 中注册插件，",
+      "repo": "wwumit/skills-tools",
+      "version": "0.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "scripts/runtime-probe.py"
+      ]
+    },
+    {
       "name": "shop-ad-check-pro",
       "fullName": "wwumit/skills-domestic",
       "skillFullName": "wwumit/skills-domestic/skills/shop-ad-check-pro",
@@ -834,7 +882,7 @@
     },
     {
       "fullName": "wwumit/skills-tools",
-      "skillCount": 7,
+      "skillCount": 9,
       "cloudSkills": [],
       "paySkills": []
     },
