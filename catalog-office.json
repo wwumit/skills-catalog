@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "disclosureSchemaVersion": "0.3",
+  "updatedAt": "2026-08-17T03:18:58.567Z",
+  "line": "office",
+  "skills": [
+    {
+      "name": "excel2insights",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/excel2insights",
+      "description": "结构化数据（CSV/XLSX/XLS/TSV）分析与可视化工具：自动统计分析、数据质量检查、",
+      "repo": "wwumit/skills-tools",
+      "version": "2.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "DISCLAIMER.md",
+        "README.md",
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "requirements.txt",
+        "assets/sample_sales_data.csv",
+        "references/demo-report-preview.html",
+        "references/demo-walkthrough.md",
+        "scripts/auto-pipeline.py",
+        "scripts/chart-generator.py",
+        "scripts/data-analyzer.py",
+        "scripts/excel-reader.py",
+        "scripts/report-generator.py",
+        "scripts/utils/__init__.py",
+        "scripts/utils/helpers.py"
+      ]
+    },
+    {
+      "name": "sum2slides-pro",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/sum2slides-pro",
+      "description": "将多说话人对话/群聊记录一键转化为结构化 PPT（meeting/brainstorm/retro 模板），纯本地生成 PPTX。",
+      "repo": "wwumit/skills-tools",
+      "version": "1.1.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "DISCLAIMER.md",
+        "README.md",
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "requirements.txt",
+        "assets/demo-ai-conversation.txt",
+        "assets/demo-group-chat.txt",
+        "assets/demo-tmeet-transcript.json",
+        "assets/sample-chat.txt",
+        "output/tmeet-demo.pptx",
+        "scripts/auto-pipeline.py",
+        "scripts/chat-parser.py",
+        "scripts/slide-builder.py",
+        "scripts/template-manager.py",
+        "scripts/tmeet-import.py",
+        "scripts/topic-extractor.py",
+        "templates/brainstorm.json",
+        "templates/default.json",
+        "templates/meeting.json",
+        "templates/retro.json",
+        "output/steps/outline.json",
+        "output/steps/parsed.json",
+        "scripts/utils/__init__.py",
+        "scripts/utils/helpers.py"
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "fullName": "wwumit/skills-tools",
+      "skillCount": 7,
+      "cloudSkills": [],
+      "paySkills": []
+    }
+  ]
+}
