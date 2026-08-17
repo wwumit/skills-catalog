@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * build-catalog.js — 从 3 个发布仓生成 catalog.json（供 dsh-skill-hub 插件消费）
+ * build-catalog.js — 从 3 个发布仓生成 catalog.json（供 dsh-compliancehub 插件消费）
  *
  * 用法: node build-catalog.js [--out catalog.json]
  * 数据源: ../skills-compliance-intl, ../skills-stock, ../skills-tools 的 skills 目录下的 SKILL.md
