@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.3",
-  "updatedAt": "2026-08-17T10:30:55.629Z",
+  "updatedAt": "2026-08-17T10:52:22.784Z",
   "line": "plugin-tools",
   "skills": [
     {
@@ -10,7 +10,7 @@
       "skillFullName": "wwumit/skills-tools/skills/bundle-lint",
       "description": "DSH 插件 bundle 结构一致性校验器。校验 cordis.patch.yml、package.json 的 dsh 插件配置、",
       "repo": "wwumit/skills-tools",
-      "version": "0.0.0",
+      "version": "1.2.0",
       "distribution": "intl",
       "disclosure": {
         "cloud": false,
@@ -24,8 +24,11 @@
         "pay": false
       },
       "files": [
+        "CHANGELOG.md",
         "SKILL.md",
-        "scripts/bundle-lint.py"
+        "package.json",
+        "scripts/bundle-lint.py",
+        "tests/cases.py"
       ]
     },
     {
@@ -113,7 +116,7 @@
       "skillFullName": "wwumit/skills-tools/skills/runtime-probe",
       "description": "DSH 插件实机验证引导器。对任意插件目录生成标准验证脚本，在真实 DSH SkillRegistry 中注册插件，",
       "repo": "wwumit/skills-tools",
-      "version": "0.0.0",
+      "version": "1.1.0",
       "distribution": "intl",
       "disclosure": {
         "cloud": false,
@@ -127,8 +130,11 @@
         "pay": false
       },
       "files": [
+        "CHANGELOG.md",
         "SKILL.md",
-        "scripts/runtime-probe.py"
+        "package.json",
+        "scripts/runtime-probe.py",
+        "tests/units.py"
       ]
     },
     {
