@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "disclosureSchemaVersion": "0.3",
+  "updatedAt": "2026-08-17T03:03:51.250Z",
+  "line": "plugin-tools",
+  "skills": [
+    {
+      "name": "dependency-scan",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/dependency-scan",
+      "description": "供应链依赖扫描器。扫描 package.json 的依赖声明，检查：DSH 宿主遮蔽（@deepseek-ai/* 进普通 dependencies）、",
+      "repo": "wwumit/skills-tools",
+      "version": "0.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "scripts/dependency-scan.py"
+      ]
+    },
+    {
+      "name": "expert2skill",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/expert2skill",
+      "description": "专家方法沉淀器（meta-skill）— 通过引导式访谈，把一个\"具备专业技术/知识但不懂 AI\"",
+      "repo": "wwumit/skills-tools",
+      "version": "1.0.2",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "references/interview-guide.md",
+        "references/rule-library-schema-v2.md",
+        "references/sample-nutrition.json",
+        "references/sample-value-investor.json",
+        "references/stock-materials-reference.md",
+        "scripts/distill.py",
+        "scripts/package_skill.py"
+      ]
+    },
+    {
+      "name": "skill-compliance",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/skill-compliance",
+      "description": "Skill上架合规检查器（国内平台 + 发布披露）。检查金融敏感词、免责声明、安全红线，并按 DISCLOSURE v0.2 检查发布披露完整性（D1/D3/D4 必填）与声明-代码一致性（云端/离线/端点 mismatch）、DSH 宿主依赖遮蔽风险；输出 disclosure 摘要（开放数据层字段）。",
+      "repo": "wwumit/skills-tools",
+      "version": "1.5.1",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "README.md",
+        "SKILL.md",
+        "package.json",
+        "requirements.txt",
+        "docs/disclosure-selfcheck-rules.json",
+        "docs/disclosure-selfcheck.md",
+        "plugins/__init__.py",
+        "plugins/base.py",
+        "plugins/ccpa.py",
+        "plugins/finance.py",
+        "plugins/gdpr.py",
+        "plugins/pipl.py",
+        "rules/skillhub-rules.json",
+        "scripts/comply.py"
+      ]
+    }
+  ]
+}

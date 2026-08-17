@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.3",
-  "updatedAt": "2026-08-16T18:32:00.093Z",
+  "updatedAt": "2026-08-17T03:03:51.250Z",
   "skills": [
     {
       "name": "backtest-analyzer",
@@ -194,6 +194,30 @@
         "scripts/guard.py",
         "scripts/rules/__init__.py",
         "scripts/rules/terms.py"
+      ]
+    },
+    {
+      "name": "dependency-scan",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/dependency-scan",
+      "description": "供应链依赖扫描器。扫描 package.json 的依赖声明，检查：DSH 宿主遮蔽（@deepseek-ai/* 进普通 dependencies）、",
+      "repo": "wwumit/skills-tools",
+      "version": "0.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "scripts/dependency-scan.py"
       ]
     },
     {
@@ -549,7 +573,7 @@
       "skillFullName": "wwumit/skills-tools/skills/skill-compliance",
       "description": "Skill上架合规检查器（国内平台 + 发布披露）。检查金融敏感词、免责声明、安全红线，并按 DISCLOSURE v0.2 检查发布披露完整性（D1/D3/D4 必填）与声明-代码一致性（云端/离线/端点 mismatch）、DSH 宿主依赖遮蔽风险；输出 disclosure 摘要（开放数据层字段）。",
       "repo": "wwumit/skills-tools",
-      "version": "1.4.5",
+      "version": "1.5.1",
       "distribution": "intl",
       "disclosure": {
         "cloud": false,
@@ -785,7 +809,7 @@
     },
     {
       "fullName": "wwumit/skills-tools",
-      "skillCount": 5,
+      "skillCount": 6,
       "cloudSkills": [],
       "paySkills": []
     },
