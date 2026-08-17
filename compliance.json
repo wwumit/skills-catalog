@@ -1,0 +1,690 @@
+{
+  "schemaVersion": 1,
+  "checkerVersion": "skill-compliance@1.4.5",
+  "updatedAt": "2026-08-17T01:46:21Z",
+  "results": [
+    {
+      "fullName": "wwumit/skills-stock",
+      "skillFullName": "wwumit/skills-stock/skills/backtest-analyzer",
+      "skill": "backtest-analyzer",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 1,
+      "issueCategories": [
+        "FINANCE",
+        "RECOMMENDATIONS"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/ccpa-check",
+      "skill": "ccpa-check",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY"
+          }
+        ],
+        "jurisdiction": [
+          "US-CA"
+        ],
+        "retention": "session",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 4,
+      "medium": 2,
+      "low": 6,
+      "issueCategories": [
+        "FINANCE",
+        "PRIVACY",
+        "RECOMMENDATIONS"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/ccpa-compliance",
+      "skill": "ccpa-compliance",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 12,
+      "medium": 7,
+      "low": 1,
+      "issueCategories": [
+        "PRIVACY",
+        "REGULATORY",
+        "SECURITY"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/ccpa-guard",
+      "skill": "ccpa-guard",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 10,
+      "medium": 4,
+      "low": 1,
+      "issueCategories": [
+        "PRIVACY",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/coppa-check",
+      "skill": "coppa-check",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY"
+          }
+        ],
+        "jurisdiction": [
+          "US"
+        ],
+        "retention": "session",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 8,
+      "medium": 1,
+      "low": 4,
+      "issueCategories": [
+        "FINANCE",
+        "PRIVACY",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/coppa-guard",
+      "skill": "coppa-guard",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 60,
+      "medium": 1,
+      "low": 2,
+      "issueCategories": [
+        "FINANCE",
+        "PRIVACY",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/excel2insights",
+      "skill": "excel2insights",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 0,
+      "medium": 5,
+      "low": 0,
+      "issueCategories": [
+        "SECURITY"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/expert2skill",
+      "skill": "expert2skill",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 1,
+      "medium": 4,
+      "low": 3,
+      "issueCategories": [
+        "FINANCE",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/finance-tools",
+      "skill": "finance-tools",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 1,
+      "medium": 2,
+      "low": 3,
+      "issueCategories": [
+        "FINANCE",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-stock",
+      "skillFullName": "wwumit/skills-stock/skills/fund-flow",
+      "skill": "fund-flow",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 0,
+      "medium": 6,
+      "low": 0,
+      "issueCategories": [
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:19Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/gdpr-check",
+      "skill": "gdpr-check",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY"
+          }
+        ],
+        "jurisdiction": [
+          "EU"
+        ],
+        "retention": "session",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 4,
+      "medium": 4,
+      "low": 6,
+      "issueCategories": [
+        "FINANCE",
+        "PRIVACY",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/gdpr-guard",
+      "skill": "gdpr-guard",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 6,
+      "medium": 3,
+      "low": 1,
+      "issueCategories": [
+        "PRIVACY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/hipaa-check",
+      "skill": "hipaa-check",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY"
+          }
+        ],
+        "jurisdiction": [
+          "US"
+        ],
+        "retention": "session",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 4,
+      "medium": 3,
+      "low": 3,
+      "issueCategories": [
+        "FINANCE",
+        "PRIVACY",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/hipaa-guard",
+      "skill": "hipaa-guard",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 2,
+      "medium": 1,
+      "low": 1,
+      "issueCategories": [
+        "PRIVACY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-stock",
+      "skillFullName": "wwumit/skills-stock/skills/market-sentiment",
+      "skill": "market-sentiment",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 1,
+      "medium": 1,
+      "low": 1,
+      "issueCategories": [
+        "FINANCE",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-stock",
+      "skillFullName": "wwumit/skills-stock/skills/market-signals",
+      "skill": "market-signals",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 1,
+      "medium": 4,
+      "low": 24,
+      "issueCategories": [
+        "FINANCE",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-domestic",
+      "skillFullName": "wwumit/skills-domestic/skills/shop-ad-check-pro",
+      "skill": "shop-ad-check-pro",
+      "distribution": "domestic",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [
+          "https://compliancehub.cn:8443"
+        ],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "server",
+        "pay": true
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 10,
+      "medium": 28,
+      "low": 0,
+      "issueCategories": [
+        "DISCLAIMER",
+        "PRIVACY",
+        "REGULATORY",
+        "SECURITY",
+        "SUPPLY_CHAIN"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/skill-compliance",
+      "skill": "skill-compliance",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 5,
+      "medium": 3,
+      "low": 1,
+      "issueCategories": [
+        "FINANCE",
+        "PRIVACY",
+        "RECOMMENDATIONS",
+        "SECURITY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-stock",
+      "skillFullName": "wwumit/skills-stock/skills/stock-planner",
+      "skill": "stock-planner",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 1,
+      "medium": 1,
+      "low": 0,
+      "issueCategories": [
+        "FINANCE",
+        "RECOMMENDATIONS"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-stock",
+      "skillFullName": "wwumit/skills-stock/skills/stock-screener",
+      "skill": "stock-screener",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 10,
+      "issueCategories": [
+        "FINANCE",
+        "RECOMMENDATIONS"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/sum2slides-pro",
+      "skill": "sum2slides-pro",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 0,
+      "medium": 3,
+      "low": 0,
+      "issueCategories": [
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-stock",
+      "skillFullName": "wwumit/skills-stock/skills/trade-tracker",
+      "skill": "trade-tracker",
+      "distribution": "intl",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 0,
+      "medium": 6,
+      "low": 0,
+      "issueCategories": [
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-xborder",
+      "skillFullName": "wwumit/skills-xborder/skills/xborder-ecom-check",
+      "skill": "xborder-ecom-check",
+      "distribution": "domestic",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN,EU,US"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 21,
+      "medium": 4,
+      "low": 4,
+      "issueCategories": [
+        "DISCLOSURE",
+        "FINANCE",
+        "PRIVACY",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:20Z"
+    },
+    {
+      "fullName": "wwumit/skills-xborder",
+      "skillFullName": "wwumit/skills-xborder/skills/xborder-ecom-guard",
+      "skill": "xborder-ecom-guard",
+      "distribution": "domestic",
+      "triState": "ok",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN,EU,US"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "verdict": "NEEDS_FIX",
+      "redlines": 0,
+      "high": 13,
+      "medium": 9,
+      "low": 1,
+      "issueCategories": [
+        "DISCLAIMER",
+        "EXAGGERATION",
+        "PRIVACY",
+        "RECOMMENDATIONS",
+        "REGULATORY"
+      ],
+      "checkedAt": "2026-08-17T01:46:21Z"
+    }
+  ]
+}
