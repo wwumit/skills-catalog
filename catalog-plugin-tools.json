@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.3",
-  "updatedAt": "2026-08-17T10:52:22.784Z",
+  "updatedAt": "2026-08-17T10:53:46.631Z",
   "line": "plugin-tools",
   "skills": [
     {
@@ -37,7 +37,7 @@
       "skillFullName": "wwumit/skills-tools/skills/dependency-scan",
       "description": "供应链依赖扫描器。扫描 package.json 的依赖声明，检查：DSH 宿主遮蔽（@deepseek-ai/* 进普通 dependencies）、",
       "repo": "wwumit/skills-tools",
-      "version": "0.0.0",
+      "version": "1.0.0",
       "distribution": "intl",
       "disclosure": {
         "cloud": false,
@@ -52,6 +52,7 @@
       },
       "files": [
         "SKILL.md",
+        "package.json",
         "scripts/dependency-scan.py",
         "tests/alignment.py"
       ]
@@ -92,7 +93,7 @@
       "skillFullName": "wwumit/skills-tools/skills/malware-scan",
       "description": "恶意代码静态检测器。扫描插件/技能代码中的恶意模式与危险调用链：远程代码执行（curl|sh）、",
       "repo": "wwumit/skills-tools",
-      "version": "0.0.0",
+      "version": "1.1.0",
       "distribution": "intl",
       "disclosure": {
         "cloud": false,
@@ -107,6 +108,7 @@
       },
       "files": [
         "SKILL.md",
+        "package.json",
         "scripts/malware-scan.py"
       ]
     },
