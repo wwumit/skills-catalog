@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "disclosureSchemaVersion": "0.3",
+  "updatedAt": "2026-08-17T03:18:58.567Z",
+  "line": "compliance",
+  "skills": [
+    {
+      "name": "ccpa-check",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/ccpa-check",
+      "description": "CCPA/CPRA Compliance Check — based on the California Consumer Privacy Act (CCPA)",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "2.2.4",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "US-CA"
+        ],
+        "retention": "session",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "references/api_key.md",
+        "scripts/ccpa-check.py",
+        "scripts/__pycache__/ccpa-check.cpython-313.pyc"
+      ]
+    },
+    {
+      "name": "ccpa-compliance",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/ccpa-compliance",
+      "description": "美国加州消费者隐私法（CCPA/CPRA）合规检查、风险评估和文档生成工具。",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "1.1.1",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "DISCLAIMER.md",
+        "README.md",
+        "SECURITY_CHECK_GUIDE.md",
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "requirements.txt",
+        "references/ccpa-law.md",
+        "scripts/ccpa-check.py",
+        "scripts/consumer-rights.py",
+        "scripts/opt-out-check.py",
+        "scripts/security_check_ccpa.py",
+        "scripts/core/__init__.py",
+        "scripts/core/check_engine.py",
+        "scripts/core/cli_base.py",
+        "scripts/core/legal_disclaimer.py",
+        "scripts/core/report_core.py",
+        "scripts/utils/ccpa_templates.py",
+        "scripts/utils/ccpa_validator.py"
+      ]
+    },
+    {
+      "name": "ccpa-guard",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/ccpa-guard",
+      "description": "CCPA 合规护栏 (ccpa-guard) v1.0.0。",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "1.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "README.md",
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "requirements.txt",
+        "scripts/guard.py",
+        "scripts/rules/__init__.py",
+        "scripts/rules/ccpa.py"
+      ]
+    },
+    {
+      "name": "coppa-check",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/coppa-check",
+      "description": "COPPA Compliance Check — Children's Online Privacy Protection Act (COPPA), 15 U.S.C. §6501 et seq. and the COPPA Rule (16 C.F.R. Part 312).",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "1.1.2",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "US"
+        ],
+        "retention": "session",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "README.md",
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "scripts/coppa-check.py"
+      ]
+    },
+    {
+      "name": "coppa-guard",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/coppa-guard",
+      "description": "COPPA 美国儿童隐私护栏 (coppa-guard) v1.0.0。",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "1.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "README.md",
+        "SKILL.md",
+        "package.json",
+        "requirements.txt",
+        "scripts/guard.py",
+        "scripts/rules/__init__.py",
+        "scripts/rules/terms.py"
+      ]
+    },
+    {
+      "name": "gdpr-check",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/gdpr-check",
+      "description": "GDPR Compliance Check — General Data Protection Regulation (EU) 2016/679 (GDPR).",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "1.1.3",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "EU"
+        ],
+        "retention": "session",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "requirements.txt",
+        "scripts/gdpr-check.py"
+      ]
+    },
+    {
+      "name": "gdpr-guard",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/gdpr-guard",
+      "description": "GDPR 合规护栏 (gdpr) v1.0.0。",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "1.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "README.md",
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "requirements.txt",
+        "scripts/guard.py",
+        "scripts/rules/__init__.py",
+        "scripts/rules/gdpr.py"
+      ]
+    },
+    {
+      "name": "hipaa-check",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/hipaa-check",
+      "description": "HIPAA Compliance Check — Health Insurance Portability and Accountability Act (HIPAA), 45 C.F.R. Parts 160 & 164 (Privacy, Security, Breach Notification Rules).",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "1.1.3",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": true,
+        "network": [
+          "https://compliancehub.cn"
+        ],
+        "offlineMode": true,
+        "apiKeys": [
+          {
+            "env": "COMPLIANCEHUB_API_KEY",
+            "storage": "file-0600"
+          }
+        ],
+        "jurisdiction": [
+          "US"
+        ],
+        "retention": "session",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "README.md",
+        "SKILL.md",
+        "_meta.json",
+        "package.json",
+        "requirements.txt",
+        "scripts/hipaa-check.py"
+      ]
+    },
+    {
+      "name": "hipaa-guard",
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillFullName": "wwumit/skills-compliance-intl/skills/hipaa-guard",
+      "description": "HIPAA 美国医疗健康护栏 (hipaa-guard) v1.0.0。",
+      "repo": "wwumit/skills-compliance-intl",
+      "version": "1.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "CHANGELOG.md",
+        "README.md",
+        "SKILL.md",
+        "package.json",
+        "requirements.txt",
+        "scripts/guard.py",
+        "scripts/rules/__init__.py",
+        "scripts/rules/terms.py"
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "fullName": "wwumit/skills-compliance-intl",
+      "skillCount": 9,
+      "cloudSkills": [
+        "ccpa-check",
+        "coppa-check",
+        "gdpr-check",
+        "hipaa-check"
+      ],
+      "paySkills": []
+    }
+  ]
+}
