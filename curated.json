@@ -26,7 +26,8 @@
     "xborder-ecom-check",
     "xborder-ecom-guard",
     "shop-ad-check-pro",
-    "dependency-scan"
+    "dependency-scan",
+    "malware-scan"
   ],
   "excluded_reasons": {
     "ccpa-audit": "description 无触发词；云端评分",

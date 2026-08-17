@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.3",
-  "updatedAt": "2026-08-17T03:03:51.250Z",
+  "updatedAt": "2026-08-17T03:18:58.567Z",
   "skills": [
     {
       "name": "backtest-analyzer",
@@ -217,7 +217,8 @@
       },
       "files": [
         "SKILL.md",
-        "scripts/dependency-scan.py"
+        "scripts/dependency-scan.py",
+        "tests/alignment.py"
       ]
     },
     {
@@ -467,6 +468,30 @@
       ]
     },
     {
+      "name": "malware-scan",
+      "fullName": "wwumit/skills-tools",
+      "skillFullName": "wwumit/skills-tools/skills/malware-scan",
+      "description": "恶意代码静态检测器。扫描插件/技能代码中的恶意模式与危险调用链：远程代码执行（curl|sh）、",
+      "repo": "wwumit/skills-tools",
+      "version": "0.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "scripts/malware-scan.py"
+      ]
+    },
+    {
       "name": "market-sentiment",
       "fullName": "wwumit/skills-stock",
       "skillFullName": "wwumit/skills-stock/skills/market-sentiment",
@@ -573,7 +598,7 @@
       "skillFullName": "wwumit/skills-tools/skills/skill-compliance",
       "description": "Skill上架合规检查器（国内平台 + 发布披露）。检查金融敏感词、免责声明、安全红线，并按 DISCLOSURE v0.2 检查发布披露完整性（D1/D3/D4 必填）与声明-代码一致性（云端/离线/端点 mismatch）、DSH 宿主依赖遮蔽风险；输出 disclosure 摘要（开放数据层字段）。",
       "repo": "wwumit/skills-tools",
-      "version": "1.5.1",
+      "version": "1.5.2",
       "distribution": "intl",
       "disclosure": {
         "cloud": false,
@@ -809,7 +834,7 @@
     },
     {
       "fullName": "wwumit/skills-tools",
-      "skillCount": 6,
+      "skillCount": 7,
       "cloudSkills": [],
       "paySkills": []
     },
