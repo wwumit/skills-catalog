@@ -29,7 +29,8 @@
     "dependency-scan",
     "malware-scan",
     "bundle-lint",
-    "runtime-probe"
+    "runtime-probe",
+    "agent-comms-check"
   ],
   "excluded_reasons": {
     "ccpa-audit": "description 无触发词；云端评分",

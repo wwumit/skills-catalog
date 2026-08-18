@@ -19,7 +19,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(__dirname, '..')
-const REPOS = ['skills-compliance-intl', 'skills-stock', 'skills-tools']
+const REPOS = ['skills-compliance-intl', 'skills-stock', 'skills-tools', 'skills-agent-comms']
 // 登记层（catalog=登记/披露层，分发仍分地域）：国内合规仓登记展示，国际市场只推出境仓
 const DOMESTIC_REPOS = ['skills-xborder', 'skills-domestic']
 const GH_OWNER = 'wwumit'

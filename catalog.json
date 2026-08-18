@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.3",
-  "updatedAt": "2026-08-17T10:53:46.631Z",
+  "updatedAt": "2026-08-18T01:58:29.895Z",
   "skills": [
+    {
+      "name": "agent-comms-check",
+      "fullName": "wwumit/skills-agent-comms",
+      "skillFullName": "wwumit/skills-agent-comms/skills/agent-comms-check",
+      "description": "Agent 间通信配置合规检查器（agent-comms 系列首个）。检查 Agent 项目的 A2A Agent Card",
+      "repo": "wwumit/skills-agent-comms",
+      "version": "1.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "package.json",
+        "scripts/agent-comms-check.py",
+        "tests/cases.py"
+      ]
+    },
     {
       "name": "backtest-analyzer",
       "fullName": "wwumit/skills-stock",
@@ -863,6 +889,12 @@
     }
   ],
   "repos": [
+    {
+      "fullName": "wwumit/skills-agent-comms",
+      "skillCount": 1,
+      "cloudSkills": [],
+      "paySkills": []
+    },
     {
       "fullName": "wwumit/skills-compliance-intl",
       "skillCount": 9,
