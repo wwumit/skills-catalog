@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "comment": "加入 bundle-lint/runtime-probe（发布质量工具箱补全，2026-08-17）",
+  "comment": "加入 agent-comms-disclosure（通信披露契约，系列第 2 个，2026-08-17）",
   "curated": [
     "ccpa-compliance",
     "ccpa-check",
@@ -30,7 +30,8 @@
     "malware-scan",
     "bundle-lint",
     "runtime-probe",
-    "agent-comms-check"
+    "agent-comms-check",
+    "agent-comms-disclosure"
   ],
   "excluded_reasons": {
     "ccpa-audit": "description 无触发词；云端评分",

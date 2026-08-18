@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclosureSchemaVersion": "0.3",
-  "updatedAt": "2026-08-18T01:58:29.895Z",
+  "updatedAt": "2026-08-18T02:05:37.580Z",
   "skills": [
     {
       "name": "agent-comms-check",
@@ -26,6 +26,32 @@
         "SKILL.md",
         "package.json",
         "scripts/agent-comms-check.py",
+        "tests/cases.py"
+      ]
+    },
+    {
+      "name": "agent-comms-disclosure",
+      "fullName": "wwumit/skills-agent-comms",
+      "skillFullName": "wwumit/skills-agent-comms/skills/agent-comms-disclosure",
+      "description": "Agent 间通信披露契约（agent-comms 系列）。把\"披露即治理\"从技能层迁移到通信层：",
+      "repo": "wwumit/skills-agent-comms",
+      "version": "1.0.0",
+      "distribution": "intl",
+      "disclosure": {
+        "cloud": false,
+        "network": [],
+        "offlineMode": true,
+        "apiKeys": [],
+        "jurisdiction": [
+          "CN"
+        ],
+        "retention": "none",
+        "pay": false
+      },
+      "files": [
+        "SKILL.md",
+        "package.json",
+        "scripts/agent-comms-disclosure.py",
         "tests/cases.py"
       ]
     },
@@ -891,7 +917,7 @@
   "repos": [
     {
       "fullName": "wwumit/skills-agent-comms",
-      "skillCount": 1,
+      "skillCount": 2,
       "cloudSkills": [],
       "paySkills": []
     },
