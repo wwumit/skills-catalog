@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "comment": "加入 agent-comms-disclosure（通信披露契约，系列第 2 个，2026-08-17）",
+  "comment": "加入 agent-trust-probe（信任级联验证，系列第 3 个，2026-08-20）",
   "curated": [
     "ccpa-compliance",
     "ccpa-check",
@@ -31,7 +31,8 @@
     "bundle-lint",
     "runtime-probe",
     "agent-comms-check",
-    "agent-comms-disclosure"
+    "agent-comms-disclosure",
+    "agent-trust-probe"
   ],
   "excluded_reasons": {
     "ccpa-audit": "description 无触发词；云端评分",
